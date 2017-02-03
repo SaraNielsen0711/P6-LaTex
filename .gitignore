@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/windows,latex,osx
+# Created by https://www.gitignore.io/api/osx,windows,latex
 
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
@@ -268,4 +268,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/windows,latex,osx
+# End of https://www.gitignore.io/api/osx,windows,latex

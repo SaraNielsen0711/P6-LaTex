@@ -34,29 +34,6 @@
       \field{title}{Titel}
       \field{year}{2000}
     \endentry
-    \entry{STD:ISO226}{report}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=7342f08b24b2bec57c467e10960f9748}{ISO226}{I\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {International Organization for Standardization}%
-      }
-      \strng{namehash}{7342f08b24b2bec57c467e10960f9748}
-      \strng{fullhash}{7342f08b24b2bec57c467e10960f9748}
-      \field{sortinit}{I}
-      \field{sortinithash}{25e99d37ba90f7c4fb20baf4e310faf3}
-      \field{labelyear}{2003}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{subtitle}{Acoustics - Normal equal-loudness-level contours}
-      \field{title}{Acoustics - Normal equal-loudness-level contours}
-      \field{type}{International Standard}
-      \field{urlday}{15}
-      \field{urlmonth}{08}
-      \field{version}{Second edition}
-      \field{year}{2003}
-    \endentry
   \endsortlist
 \endrefsection
 \endinput

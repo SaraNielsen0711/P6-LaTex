@@ -2236,9 +2236,8 @@
     <bcf:datasource type="file" datatype="bibtex">Bibliography/Bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">STD:ISO226</bcf:citekey>
+    <bcf:citekey order="1">EksempelKilde</bcf:citekey>
     <bcf:citekey order="2">EksempelKilde</bcf:citekey>
-    <bcf:citekey order="3">EksempelKilde</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>

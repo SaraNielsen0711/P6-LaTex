@@ -2,5 +2,4 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {danish}
-\contentsline {chapter}{Bibliografi}{1}{section*.10}
-\contentsline {chapter}{Bilag}{3}{section*.11}
+\contentsline {chapter}{Bilag}{1}{section*.9}

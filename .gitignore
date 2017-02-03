@@ -272,6 +272,13 @@ $RECYCLE.BIN/
 Master.pdf
 Master.pdf
 <<<<<<< HEAD
+<<<<<<< HEAD
 Master.pdf
 =======
+>>>>>>> origin/master
+=======
+
+.texpadtmp/Master.blg
+
+.texpadtmp/Master.log
 >>>>>>> origin/master

@@ -1,9 +1,9 @@
-[0] Config.pm:324> INFO - This is Biber 2.1
+[1] Config.pm:324> INFO - This is Biber 2.1
 [1] Config.pm:327> INFO - Logfile is '/Users/saranielsen93/Documents/UNI/AAU - PDP 6 .sem./P6 - projekt/P6-LaTex/.texpadtmp/Master.blg'
-[75] biber-darwin:276> INFO - === Fri Feb  3, 2017, 12:08:39
-[75] Biber.pm:333> INFO - Reading '/Users/saranielsen93/Documents/UNI/AAU - PDP 6 .sem./P6 - projekt/P6-LaTex/.texpadtmp/Master.bcf'
-[271] Biber.pm:645> INFO - Found 1 citekeys in bib section 0
-[304] Biber.pm:2977> INFO - Processing section 0
-[333] Biber.pm:3115> INFO - Looking for bibtex format file '/Users/saranielsen93/Documents/UNI/AAU - PDP 6 .sem./P6 - projekt/P6-LaTex/Bibliography/Bibliography.bib' for section 0
-[334] Utils.pm:162> ERROR - Can't read /Users/saranielsen93/Documents/UNI/AAU - PDP 6 .sem./P6 - projekt/P6-LaTex/Bibliography/Bibliography.bib
-[334] Biber.pm:110> INFO - ERRORS: 1
+[106] biber-darwin:276> INFO - === Fri Feb  3, 2017, 12:43:32
+[107] Biber.pm:333> INFO - Reading '/Users/saranielsen93/Documents/UNI/AAU - PDP 6 .sem./P6 - projekt/P6-LaTex/.texpadtmp/Master.bcf'
+[260] Biber.pm:645> INFO - Found 1 citekeys in bib section 0
+[291] Biber.pm:2977> INFO - Processing section 0
+[329] Biber.pm:3115> INFO - Looking for bibtex format file '/Users/saranielsen93/Documents/UNI/AAU - PDP 6 .sem./P6 - projekt/P6-LaTex/Bibliography/Bibliography.bib' for section 0
+[331] Utils.pm:162> ERROR - Can't read /Users/saranielsen93/Documents/UNI/AAU - PDP 6 .sem./P6 - projekt/P6-LaTex/Bibliography/Bibliography.bib
+[331] Biber.pm:110> INFO - ERRORS: 1

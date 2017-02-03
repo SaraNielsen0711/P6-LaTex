@@ -1,0 +1,44 @@
+\section{Test af brugergrænseflade}
+\label{TestAfBrugergraenseflade}
+Hensigten med brugergrænsefladen er defineret i en række punkter, som fremgår af \fullref{OpsummeringAfSpecifikkeSystemkrav}, hvor det blandt andet skal være muligt for en bruger at justere lydtryksniveauet mellem 40dB og 100dB ved at dreje på et potentiometer. Testning af dette foregår blot ved, at justere på volumen og registrere, om den nødvendige justering også forekommer. Ved hjælp af et andet potentiometer skal brugeren også have mulighed for at ændre på referencespændingen, og det skal samtidig være muligt at se, hvilke filtre, der er aktive, på et eksternt display. En bypassfunktion  blev indkorporeret i systemet, så det er muligt helt at omgå systemet, hvis det er interessen for brugeren.
+
+Når der drejes på volumenpotentiometeret, registreres der, at volumen ændrer sig, så denne vurderes til at fungere efter hensigten.
+Samtidig registreres der også ændring i forhold til, hvilke frekvensområder der forstærkes eller dæmpes, når der justeres på referencepotentiometeret, hvilket validerer dens funktionalitet.
+%
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+Ref & Vol & Input & Output & Bits &  &  &  &  \\ \hline
+Position & Position & Spænding & Spænding & Komparator & MSB-DB7 & DB6 & DB5 & DB4 \\ \hline
+70dB & 80dB & 100mV & 58mV & 1 & 0 & 0 & 0 & 1 \\ \hline
+75dB & 80dB & 100mV & 74mV & 1 & 0 & 0 & 0 & 0 \\ \hline
+80dB & 80dB & 100mV & 100mV & 0 & 0 & 0 & 0 & 0 \\ \hline
+85dB & 80dB & 100mV & 132mV & 0 & 0 & 0 & 0 & 1 \\ \hline
+90dB & 80dB & 100mV & 196mV & 0 & 0 & 0 & 1 & 0 \\ \hline
+\end{tabular}
+\caption{Testdata for input i forhold til output af referencepotentiometeret i forhold til fast volumenniveau på 80dB}
+\label{Accepttest }
+\end{table}
+\noindent
+Det eksterne display består af LED'er, der repræsenterer hvilke filtre, der er aktive. Også dette fungerer efter hensigten. Ønskes der fra brugeren at omgå hele kredsløbet, kan dette gøres med bypassknappen på bagsiden af kassen, som det også fremgår af \autoref{fig:InterfaceBack}. Imens der lyttes til musik, undersøges dette ved at ændre knappens position mellem 'Activate' og 'Bypass'. Dette giver en tydelig ændring i lydbilledet, og derfor vurderes denne til at fungerer efter hensigten.
+ %
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+Input & Output & Bits &  &  &  &  &  \\ \hline
+Bypass & Spænding & Spænding & Komparator & MSB-DB7 & DB6 & DB5 & DB4 \\ \hline
+off & 736mV & 860mV & 0 & 0 & 1 & 1 & 1 \\ \hline
+on & 736mV & 100mV & 0 & 0 & 0 & 0 & 0 \\ \hline
+off & 736mV & 32mV & 1 & 0 & 1 & 1 & 1 \\ \hline
+on & 736mV & 232mV & 1 & 0 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+\caption{Testdata for input i forhold til output når bypass-funktionen er til og frakoblet.}
+\label{my-label}
+\end{table}
+%
+\newpage
+\noindent
+
+

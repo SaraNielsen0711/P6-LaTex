@@ -1,0 +1,43 @@
+\chapter{Perspektivering}
+\label{Perspektivering}
+%
+Arbejdet som er fremlagt i denne rapport demonstrerer at det er muligt at lave en analog løsning som kompenserer for menneskets frekvensafhængige hørelse, men der er samtidig elementer som ikke er blevet undersøgt.
+%
+\section{Brugertest}
+\label{Perspektivering_Brugertest}
+Mest prominent er at der ikke foretaget nogen brugertest, som klarlægger hvorledes produktet præsterer i forhold til eventuelle brugeres behov. Projektet bygger på \textcite{STD:ISO226}, som klarlægger den menneskelige perception af lyd relativt til frekvens, for rene sinustoner. Det kan meget vel være at opfattelsen af musik i højere grad er afhængig af andre faktorer; dynamik, genre med mere. Det er derfor i høj grad relevant at udføre en undersøgelse svarende til den der er udført i \textcite{STD:ISO226} for musik, for at finde ud af om der forekommer afvigelser mellem rene sinustoner og musik. 
+
+Det er ligeledes relevant at undersøge om brugeres oplevelse af produktet, både hvad angår oplevelse og interaktion med brugergrænsefladen. 
+%
+\section{Produkttilføjelser}
+\label{Perspektivering_Tilfoejelser}
+%
+Følgende \subsectionnamecustom\ er en samling af idéer til nye tilføjelser som var uden for projektets omfang, men højest relevante for et færdigt, forbrugerklart, produkt.
+%
+\subsection{Stereo}
+Systemet blev udviklet til kun at behandle et enkelt lydsignal men eftersom det meste musik er indspillet i stereo, vil det være en åbenlys tilføjelse at supportere stereo-lyd i følgende generationer. Dette vil blot kræve det dobbelte antal filtre og nogle få ekstra komponenter.
+%
+\subsection{Fjernbetjening}
+Fjernbetjening vil være en velkommen tilføjelse til produktet. Dette vil også muliggøre at skjule produktet i et TV-møbel eller lignende. Der findes motoriserede potentiometre, som foruden at muliggøre justering af volumen med en fjernbetjening, også kan få produktet til at fremstå luksuriøst.
+%
+\subsection{Indbygget strømforsyning}
+Som produktet er udviklet nu kræves der en en strømforsyning som leverer +8V, GND og -5V. Dette er selvsagt ikke en god løsning for et forbrugerprodukt, hvorfor det vil være gavnligt at integrere en strømforsyning i produktet og blot lade brugere tilkoble 230V direkte fra stikkontakten til produktet.
+%
+\subsection{Indbygget DAC}
+Produktet er udviklet til eget forbrug, og gruppen har således mulighed for at kontrollere inputspændingen for lydsignalet. Det kan dog ikke forventes at brugere tager højde for dette, hvorfor interaktionen kan simplificere ved at indbygge en digital til analog konverter, DAC, i produktet. Endvidere skal produktet kun kunne modtage et digitalt signal eksempelvis via USB eller en trådløs kommunikationsprotokol som Bluetooth, hvilket også vil gøre produktet mindre sårbart overfor forkert inputsignal.
+%
+\subsection{Integration med andre produkter}
+For at flest mennesker muligvis kan få glæde af produktet, og samtidig simplificere opsætning såvel som brugervenlighed, vil det være gavnligt at integrere systemet i andre produkter såsom effektforstærkere, surroundsystemer, bærbare højttalere og ikke mindst telefoner og computere. I nogle af disse sammenhænge vil det sandsynligvis være lettere og billigere at integrere systemet som software, direkte i musikafspilleren.
+%
+\section{Fejlrettelser}
+\label{Perspektivering_Fejlrettelser}
+Følgende \subsectionnamecustom\ beskriver konkrete problemer med produktet, og forslag til hvorledes de kan udbedres.
+%
+\subsection{Kliklyd ved filterskrift}
+Når systemet skifter filtre ske det med hørbare kliklyde til følge. kliklyden ved filterskiftene er ikke specielt iørefaldende og variere afhængigt af hvilke filtre der skiftes imellem. Lyden er dog i de fleste tilfælde høj nok til at genere lytteren hvorfor denne fejl bør udbedres. Fejlen formodes at opstå fordi potentialeforskellen mellem de forskellige filtre varierer grundet deres forskellige forstækning. Et løsningsforslag kunne derfor være at koble filtrenes udgang til en kondensator, så kraftige og pludselige potentialeforskelle elimineres.  
+%
+\subsection{Volumenkontrol}
+Volumenkontrollen er designet med to outputs til stereolyd, men selvom den er beregnet til dette, anvendes den i dette projekt som mono. Dette blev gjort ved at forbinde de to inputs og de to outputs, men det kunne med fordel været gjort anderledes. Af hensyn til risikoen for, at de to outputs måske vil interferere, kan den ene forbindelse fjernes og således kun at benytte én kanal på volumenkontrollen. Problemet løser sig selv, hvis produktet forbedres til at understøtte stereo. 
+
+
+

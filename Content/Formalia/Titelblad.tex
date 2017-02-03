@@ -1,0 +1,81 @@
+% OBS: Many of the commands in this document rely on definitions from another tex-document (Metadata.tex) prior to this one
+% Udarbejdet af: Jesper Nørgaard (jesper@noergaard.eu) 10. april 2012
+
+
+\cleardoublepage
+\phantomsection
+\pdfbookmark[0]{Titelblad}{Titelblad}
+\thispagestyle{empty}
+
+\begin{minipage}[t]{0.48\textwidth}
+\vspace*{-25pt}
+\includegraphics[height=4cm]{++AAU-Logo++}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+{\small 
+\textbf{v/ Institut for\\
+\institutionname}\\
+\studyname\\
+\adress\\
+\city\\
+}
+\end{minipage}
+%
+\vspace*{1cm}
+%
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{Titel:} \\[5pt]\bigskip\hspace{2ex}
+\projectname\vspace{-2.75ex}\\\bigskip\hspace{2ex}
+\projectnameextension\\
+%
+\textbf{Projekt:} \\[5pt]\bigskip\hspace{2ex}
+\semestername
+
+\textbf{Projektperiode:} \\[5pt]\bigskip\hspace{2ex}
+Den \projectperiod
+
+\textbf{Projektgruppe:} \\[5pt]\bigskip\hspace{2ex}
+\groupname
+
+%\textbf{Email:} \\[5pt]\bigskip\hspace{2ex}
+%\groupemail
+
+\textbf{Vejleder:} \\[5pt]\hspace*{2ex}
+\supervisor \\\hspace*{2ex}
+
+\textbf{Sidetal:} \numberofpages \\ %Antal tekst sider
+\textbf{Antal bilag:} \numberofappendix \\ %Antal bilag
+\textbf{Afsluttet:} Den \finishdate\ \finishyear
+\end{minipage}
+%
+\begin{minipage}[t]{0.483\textwidth}
+\textbf{Synopsis:} \\[5pt]
+\fbox{\parbox{7cm}{\bigskip\input{Content/Formalia/Synopsis}\bigskip}}
+\end{minipage}
+
+\vspace{20 mm} % Sætter afstand fra ovenstående. Skal op eller nedjusteres, så det ser pænt ud og holder sig på én side.
+
+\textbf{Deltagere:}
+
+\vspace{5 mm} % Sætter afstand fra ovenstående. (Afstanden mellem Overskriften "Deltagere" og underskriftslinjerne)
+
+\begin{table}[H]
+	\centering
+		\begin{tabular}{c c c}
+			\underline{\phantom{mmmmmmmmmmmmmm}} & 	\underline{\phantom{mmmmmmmmmmmmmm}} & \underline{\phantom{mmmmmmmmmmmmmm}} \\
+			\groupmemberI & \groupmemberII & \groupmemberIII\\
+			&&\\
+			&&\\
+			\underline{\phantom{mmmmmmmmmmmmmm}} & \underline{\phantom{mmmmmmmmmmmmmm}} \\
+					\groupmemberIV & \groupmemberV \\
+
+		\end{tabular}
+\end{table}
+
+\vfill
+
+%{\footnotesize\itshape Rapportens indhold er frit tilgængeligt, men offentliggørelse (med kildeangivelse) må kun ske efter aftale med forfatterne.}
+
+%{\footnotesize\itshape The content of the report is freely available, but publication (with source reference) may only take place in agreement with the authors.}
+\cleardoublepage

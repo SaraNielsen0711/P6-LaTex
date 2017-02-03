@@ -1,0 +1,49 @@
+\subsection{To RC-led}
+\label{ToRCLed}
+Når der beskæftiges med realtionen mellem et indgangssignal og et udgangssignal, tænkes der på, hvilken forstærkning eller dæmpning, der sker i systemet. Dette beskrives med overføringsfunktionen, der generelt lyder:
+\begin{equation}
+	H(S)=\frac{Y(S)}{X(S)}
+\quad
+	<=>
+\quad	
+	Y(S)=H(S)*X(S)
+\end{equation}
+
+\noindent
+$X(S)$ beskriver indgangssignalet, $Y(S)$ beskriver udgangssignalet og $H(S)$ beskriver den pågældende forstærkning eller dæmpning, der ganget med $X(S)$ er produktet af $Y(S)$. Dette er uafhængigt af om der kigges på forstærkning af strøm eller spænding. \\
+
+\noindent
+Ved tilføjelsen af et nyt RC-led omregnes $R_F$ og $R_1$ til ét led, $R_F'$. Kondensatoren $C_1$ ses der bort fra i denne sammenhæng, da den ikke påvirker forstærkningen/dæmpningen. Kondensatoren bestemmer i stedet, hvornår de forskellige led ruller ind. Der er derfor blot tale om to modstande, der sidder parallelt, som skal regnes sammen til én modstand. Det foregår på følgende måde: \\
+
+\begin{equation}
+	R_F'= \frac{R_F*R_1}{R_F+R_1}
+\end{equation}\\
+
+\noindent
+Med dette kommer en overføringsfunktion for et filter med 2 RC-led til at hedde:\\
+
+\begin{equation}
+	\frac{V_o}{V_i}=-\frac{R_F'||(R_2+\frac{1}{SC_2})}{R_i}
+\quad
+	<=>
+\quad
+	\frac{V_o}{V_i}=-\frac{R_F'*(R_2+\frac{1}{SC_2})}{R_i*(R_F'+(R_2+\frac{1}{SC_2}))}
+\end{equation}\\
+
+\noindent
+Det er herefter muligt at reducere udtrykket ved at reducere antallet af brøkstreger. Eksempelvis kan der ganges $SC_2$ på både over og under brøkstregen, hvilket vil reducere den samlede funktion. Endvidere samles $-\frac{R_F'}{R_i}$ på med sin egen brøkstreg.\\
+
+\begin{equation}
+	\frac{V_o}{V_i}=-\frac{R_F'}{R_i}* \frac{R_2*SC_2+1}{R_F'*SC_2+R_2*SC_2+1}
+\quad
+	<=>
+\quad
+	\frac{V_o}{V_i}=-\frac{R_F'}{R_i}*\frac{R_2*SC_2+1}{SC_2(R_F'+R_2)+1}\\
+\end{equation}\\
+
+\noindent
+Poler og nulpunkter
+
+\begin{equation}
+	\frac{V_o}{V_i}=-\frac{R_F'}{R_i}*\frac{\frac{S}{\omega Z}+1}{\frac{S}{\omega P}+1}
+\end{equation}

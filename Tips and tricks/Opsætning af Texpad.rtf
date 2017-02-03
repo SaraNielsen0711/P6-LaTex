@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1492\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgenericrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Guide til ops\'e6tning af Texpad\
+
+\fs24 Nednest\'e5ende er en guide til at f\'e5 programmet Texpad (OSX) til at virke endnu bedre med preamblen.\
+\
+
+\fs36 Autocomplete (Tilf\'f8jelser)\
+
+\fs24 1: \'c5ben menupunktet \'93Add/Edit autocompleted commands\'85\'94 \
+2: Inds\'e6t f\'f8lgende:\
+\
+=fullref:ref\
+fxnote | Uses the fixme package to insert a note in your text E.g. \\fxnote\{note here\}\
+fxwarning | Uses the fixme package to insert a warning note in your text E.g. \\fxwarning\{note here\}\
+fxerror | Uses the fixme package to insert an error note in your text E.g. \\fxerror\{note here\}\
+fxfatal | Uses the fixme package to insert a fatal note in your text E.g. \\fxnfatal\{note here\}\
+listoffixmes | Generates a lists of fixme's\
+lstinline! | End with an ! and write code in between to write code in-line\
+begin:lstlisting | Insert code to have it syntax highlighted\
+\
+3: Genstart Texpad\
+\
+\
+
+\fs36 Snippets\
+
+\fs24 1: \'c5ben menupunktet \'93Add/Edit Snippets\'85\'94\
+2: Rediger eller tilf\'f8j en fil som heder \'93Figure.snippet\'94\
+3: Inds\'e6t f\'f8lgende i filen:\
+\
+% A snippet to insert a floating figure \
+ctrl key = f\
+group = Floating\
+insert at cursor =\
+\\begin\{figure\}[H]\
+	\\centering\
+	\\includegraphics[resolution=300,scale=1]\{\}\
+	\\caption\{<SELECTION>\}\
+	\\label\{fig:\}\
+\\end\{figure\}\
+\\noindent}

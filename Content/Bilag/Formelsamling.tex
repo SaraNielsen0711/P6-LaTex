@@ -1,0 +1,87 @@
+\chapter{Formelsamling}
+\label{Formelsamling}
+%
+\begin{tabularx}{\textwidth}{ |X|X| }
+%  \hline
+%  \multicolumn{1}{ |c|l| }{Team sheet} & TEST TESTTEST\\
+  \hline
+  \bigskip
+  \(\displaystyle 	 L_p=\left(\frac{10}{\alpha_f} * lg A_f\right) dB - L_U + 94dB \) 
+  & 
+  Formel til udregning af, hvilket lydtryksniveau en ren tone skal afspilles ved, for at den perciperes som værende lige så høj som referencetonen ved en given phon-kurve.
+  
+  \bigskip
+  $f$ = Frekvens givet i hertz
+  
+  \noindent
+  $L_P$ = Lydtryksniveauet givet i dB
+  
+  \noindent 
+  $L_U$ = Størrelsen af den lineære overføringsfunktion, normaliseret ved 1000Hz
+  
+  \bigskip
+  Formelen gør sig kun gældende fra 20phon til 90phon, med forbehold for at 90phon er begrænset til frekvenserne mellem 20Hz og 4000Hz og 80phon er begrænset til frekvenser mellem 5000Hz til 12500Hz. Uden for denne afgrænsning vil formlen kun fungere informativt. \\
+  \hline 
+  \bigskip
+  \(\displaystyle A_f = 4.47 * 10^{-3} * \left(10^{0.025*L_N} - 1.15\right) + \left[0.4*10^{\left(\frac{T_f + L_U}{10} - 9\right)}\right]^{\alpha_f}\) 
+  &
+  Variablen $A_f$ beskriver sammenhængen mellem \textit{Loudness-Level} og grænseværdien for menneskets hørelse i forhold til en valgt frekvens, samt menneskets evne til at percipere en tone ved frekvensen.
+  
+  \bigskip
+  $L_N$ = \textit{Loudness-Level} givet i phon
+  
+  \noindent
+  $T_f$ = Høretærsklen
+  
+  \noindent
+  $\alpha_f$ = Eksponenten for perception af \textit{Loudness}
+  
+  \bigskip
+  Værdierne for $A_f$ og $\alpha_f$ er de samme i de to formler. \\
+  \hline
+   \bigskip
+  \(\displaystyle datapunkt = (phon_{ref}-phon_{level})-
+  (dB_{ref}-dB_{level})\) 
+  &
+  Formel til at udregne et nyt datapunkt bestående af differencen mellem referencen og en specifik phon-kurve ved en bestemt frekvens. Differencen mellem $phon_{ref}$ og $phon_{level}$ angiver forskydningsfaktoren. 
+  
+  \bigskip
+  $phon_{ref}$ = Referencen på 80phon
+  
+  \noindent
+  $phon_{level}$ = Den specifikke phon-kurve, hvorfra differencen skal findes
+  
+  \noindent
+  $dB_{ref}$ = Referencens lydtryksniveau målt ved den pågældende frekvens
+  
+  \noindent
+  $dB_{level}$ = Den specifikke phon-kurves lydtryksniveau målt ved den pågældende frekvens \\
+  \hline
+\end{tabularx}
+
+
+\begin{tabularx}{\textwidth}{ |X|X| }
+%  \hline
+%  \multicolumn{1}{ |c|l| }{Team sheet} & TEST TESTTEST\\
+  \hline
+  \bigskip
+  \(\displaystyle \Delta L = 10*log\left[\frac{(I+\Delta I)}{I}\right]\) 
+  &
+  \textit{Webers Fraction} er en formel til udregning af JND i forhold til detektering af intensitetsforskelle (lydtryksniveauer) vedrørende \textit{Loudness}. Formlen gør sig gældende når JND skal angives i dB.
+  
+  \bigskip
+  $\Delta L$ = JND for den hørbare ændring i \textit{Loudness}
+  
+  \noindent 
+  $\Delta I$ = Den mindste perciperede ændring i intensitet (lydtryksniveau)
+  
+  \noindent
+  $I$ = Tonens intensitet (lydtryksniveau)
+  \noindent
+    
+  \bigskip
+  Forholdet mellem $\Delta I$ og $I$ antages forværende konstant. For \textit{Wideband Noise} er JND mellem 0.5dB og 1dB for lydtryksniveauer mellem 20dB og 100dB. Formlen gør sig ikke gældende for rene toner.\\
+  \hline
+\end{tabularx}
+
+

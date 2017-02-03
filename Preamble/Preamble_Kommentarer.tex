@@ -1,0 +1,14 @@
+\usepackage[footnote,marginclue,draft,danish,silent,nomargin]{fixme}
+%Muliggør kommentarer. Udskift evt. "draft" med "final" for at udløse en fejl ved typesætning
+
+\newcommand{\fxsource}[1]{\fxnote{Kilde? #1}}
+%Custom makro som indsætter en note som efterspørger en kilde: \fxsource. Med mulighed for at specificere hvilken kilde der mangler, som argument: \fxsource{VALGFRI_KILDE}.
+
+\newcommand{\fxappendix}[1]{\fxnote{Bilag? #1}}
+%Custom makro som indsætter en note som efterspørger et bilag: \fxappendix. Med mulighed for at specificere hvilken kilde der mangler, som argument: \fxappendix{VALGFRIT_Bilag}.
+
+\newcommand{\fxwrite}[1]{\lipsum[1]\fxnote{Skriv #1}}
+%Custom makro som indsætter en note som minder om at skrive afsnittet. Med mulighed for at specificere hvilkeafsnit der er tale om, som argument: \fxwrite{VALGFRIT_AFSNIT}.
+
+\newcommand{\fxfit}[1]{\fxnote{Tilpas #1}}
+%Custom makro som indsætter en note som minder om at tilpasse afsnittet. Med mulighed for at specificere hvilkeafsnit der er tale om, som argument: \fxfit{VALGFRIT_AFSNIT}.

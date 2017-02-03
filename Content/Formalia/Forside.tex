@@ -1,0 +1,38 @@
+% OBS: Many of the commands in this document rely on definitions from another tex-document (Metadata.tex) prior to this one
+%
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}% Horizontal rule
+\newgeometry{left=2cm,right=2cm}
+
+\newcommand\printtitle{{\centering \thetitle \par}}
+
+\makeatletter% Author
+\newcommand\printauthor{
+    {\centering \large \@author}}				
+\makeatother
+
+\title{	\normalsize \textsc{\semestername} %Subtitle of the document
+	\\[1.5cm]% 2cm spacing
+	\HRule{0.5pt} \\% Upper rule
+	\LARGE \textbf{\MakeUppercase{\projectname\\\projectnameextension}}	% Title
+	\HRule{2pt} \\[0.5cm]% Lower rule + 0.5cm spacing
+	\normalsize Den \finishdate\ \finishyear% The date of completion
+}
+\author{
+	\groupname\\
+	\institutionname, \universityname\\
+    \texttt{\groupemail}\\
+}
+\thispagestyle{empty}% Removes header and page numbering
+
+\printtitle% Print the title data as defined above
+
+%
+\begin{figure}[H]
+\noindent\makebox[\textwidth]{\includegraphics[width=\textwidth]{WhiteFrontImage.pdf}}
+\label{fig:Forside}
+\end{figure}
+\noindent
+%
+\vfill
+\printauthor% Print the author data as defined above
+\restoregeometry

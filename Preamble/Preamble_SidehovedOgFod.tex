@@ -1,0 +1,44 @@
+\makepagestyle{AAU}
+\makepsmarks{AAU}{%
+	\createmark{chapter}{left}{shownumber}{}{. \ }
+	\createmark{section}{right}{shownumber}{}{. \ }
+	\createplainmark{toc}{both}{\contentsname}
+	\createplainmark{lof}{both}{\listfigurename}
+	\createplainmark{lot}{both}{\listtablename}
+	\createplainmark{bib}{both}{\bibname}
+	\createplainmark{index}{both}{\indexname}
+	\createplainmark{glossary}{both}{\glossaryname}
+}
+\nouppercaseheads
+% Ingen Caps ønskes
+
+\makeevenhead{AAU}{\groupname}{}{\leftmark}
+% Definerer lige siders sidehoved {Navn}{Venstre}{Center}{Højre}
+
+\makeoddhead{AAU}{\rightmark}{}{\universityname}
+% Definerer ulige siders sidehoved {Navn}{Venstre}{Center}{Højre}
+
+\makeevenfoot{AAU}{\thepage}{}{}
+% Definerer lige siders sidefod {Navn}{Venstre}{Center}{Højre}
+
+\makeoddfoot{AAU}{}{}{\thepage}
+% Definerer ulige siders sidefod {Navn}{Venstre}{Center}{Højre}
+
+\makeheadrule{AAU}{\textwidth}{0.5pt}
+% Tilføjer en streg under sidehovedets indhold
+
+\makefootrule{AAU}{\textwidth}{0.5pt}{1mm}
+% Tilføjer en streg under sidefodens indhold
+
+\copypagestyle{AAUchap}{AAU}
+% Sidehoved for kapitelsider defineres som standardsider, men med blank sidehoved
+
+\makeoddhead{AAUchap}{}{}{}
+\makeevenhead{AAUchap}{}{}{}
+\makeheadrule{AAUchap}{\textwidth}{0pt}
+
+\aliaspagestyle{chapter}{AAUchap}
+% Den ny stil vælges til at gælde for kapitler
+															
+\pagestyle{AAU}
+% Valg af sidehoved og sidefod

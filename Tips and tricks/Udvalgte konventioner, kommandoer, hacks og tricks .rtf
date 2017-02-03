@@ -1,0 +1,95 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1492\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgenericrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Navngivningskonventioner
+\fs24 \
+Det er vigtigt at holde en konsistent navngivning hvad ang\'e5r filer og labels, is\'e6r n\'e5r man er flere som arbejder sammen om et projekt. Her er nogle standarder som man kan v\'e6lge at f\'f8lge:\
+\
+\'e6=ae, \'f8=oe, \'e5=aa\
+Brug stort begyndelsesbogstav og underscore, eksempel: Eksempel_paa_navn.tex\
+Labels til undersektioner b\'f8r v\'e6re SektionOverskrift_UnderSektionOverskrift\
+\
+
+\fs36 Nyttige kommandoer
+\fs24 \
+\\\\ = Ny linje\
+\\\\[5mm] = Blank linje uden indryk\
+\\par = Ny linje med indryk (En blank linje giver samme resultat, men ser rodet ud)\
+\\autoref\{LABEL_HER\} = Refererer til en figur, tabel eller andet objekt og inds\'e6tter selv type; figur, tabel osv. f\'f8r referencen.\
+\\fullref\{LABEL_HER\} = Refererer til et afsnit eller kapitel, med (afsnits- eller kapitelnavn) bagefter.\
+\\textcite\{BIBTEX_KEY_HER\} = Inds\'e6tter kildehenvisning 
+\b uden
+\b0  parenteser, 
+\b uden
+\b0  sidetal\
+\\textcite[s. SIDETAL]\{BIBTEX_KEY_HER\} = Inds\'e6tter kildehenvisning 
+\b uden
+\b0  parenteser, 
+\b med
+\b0  sidetal\
+\\parencite\{BIBTEX_KEY_HER\} = Inds\'e6tter kildehenvisning 
+\b med
+\b0  parenteser, 
+\b uden
+\b0  sidetal\
+\\parencite[s. SIDETAL]\{BIBTEX_KEY_HER\} = Inds\'e6tter kildehenvisning 
+\b med
+\b0  parenteser, 
+\b med
+\b0  sidetal\
+\\fxnote\{NOTE_HER\} Inds\'e6tter en note, eksempelvis til senere rettelse\
+\\fxsource\{VALGFRI_KILDE\} Inds\'e6tter en note, som eftersp\'f8rger en kilde. Tager ogs\'e5 valgfrit et argument, som specificerer hvilken kilde der er tale om.\
+\\fxappendix\{VALGFRIT_BILAG\} Inds\'e6tter en note, som eftersp\'f8rger et bilag. Tager ogs\'e5 valgfrit et argument, som specificerer hvilket bilag der er tale om.\
+\\blankline Inds\'e6tter en blank linje\
+
+\fs36 \
+Inds\'e6ttelse af billede\
+
+\fs24 Inds\'e6t et billede ved at udskifte ordene som er skrevet med CAPS, i nedenst\'e5ende. \\scale er en procentsats fra 0.0 til 1, som justerer billedets st\'f8rrelse.\
+\
+\\begin\{figure\}[H]\
+\\centering\
+\\includegraphics[scale=1]\{FILNAVN.FILTYPE\}\
+\\caption\{EN BESKRIVELSE AF FIGUREN\}\
+\\label\{fig:NAVN_TIL_BRUG_VED_REFERENCE\}\
+\\end\{figure\}\
+\\noindent\
+\
+
+\fs36 Citater\
+
+\fs24 Inds\'e6t citat der hvor der st\'e5r CITAT_HER, i nedenst\'e5ende.\
+\\begin\{quote\}\
+	\\textit\{CITAT_HER\}\
+\\end\{quote\}\
+\\noindent\
+\
+
+\fs36 Fremh\'e6vet tekst (Til problemformulering ol.)\
+
+\fs24 Inds\'e6t citat der hvor der st\'e5r FREMH\'c6VET_TEKST_HER, i nedenst\'e5ende.\
+\\begin\{quoteemph\}\
+	\\textit\{FREMH\'c6VET_TEKST_HER\}\
+\\end\{quoteemph\}\
+\\noindent\
+\
+
+\fs36 Bilag
+\fs24 \
+For .TEX:\
+\\input\{Bilag/FILNAVN\}\
+\
+For .PDF:\
+\\chapter\{NAVN\}\
+\\label\{app:LABEL\}\
+\\includepdf[pages=\{-\}]\{Bilag/FILNAVN\}\
+\
+
+\fs36 Andet\
+
+\fs24 For at nogle editors (SublimeText) kan types\'e6tte fra alle filer, og ikke kun fra master-filen, skrives f\'f8lgende i toppen af alle tex-filer:\
+%!TEX root = Master.tex		%Definerer master-fil for nogle editors}

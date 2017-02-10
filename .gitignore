@@ -258,3 +258,11 @@ $RECYCLE.BIN/
 *.lnk
 
 Master.pdf
+
+*.aux
+
+*.out
+
+*.gz
+
+*.toc

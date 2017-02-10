@@ -2,4 +2,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {danish}
-\contentsline {chapter}{Bilag}{1}{section*.9}
+\contentsline {chapter}{\chapternumberline {1}Diskussion}{1}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}Konklusion}{3}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Perspektivering}{5}{chapter.3}
+\contentsline {chapter}{Bilag}{7}{section*.9}

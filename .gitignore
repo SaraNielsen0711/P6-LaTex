@@ -42,6 +42,7 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+*.texpadtmp
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms

@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/osx,windows,latex
+# Created by https://www.gitignore.io/api/latex,osx,processing,windows
 
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
@@ -56,37 +56,20 @@ acs-*.bib
 
 # beamer
 *.nav
-*.pre
 *.snm
 *.vrb
-
-# changes
-*.soc
 
 # cprotect
 *.cpt
 
-# elsarticle (documentclass of Elsevier journals)
-*.spl
-
-# endnotes
-*.ent
-
 # fixme
 *.lox
-
-# feynmf/feynmp
-*.mf
-*.mp
-*.t[1-9]
-*.t[1-9][0-9]
-*.tfm
-*.[1-9]
-*.[1-9][0-9]
 
 #(r)(e)ledmac/(r)(e)ledpar
 *.end
 *.?end
+*.[1-9]
+*.[1-9][0-9]
 *.[1-9][0-9][0-9]
 *.[1-9]R
 *.[1-9][0-9]R
@@ -114,6 +97,7 @@ acs-*.bib
 *.gtex
 
 # hyperref
+*.brf
 
 # knitr
 *-concordance.tex
@@ -134,7 +118,9 @@ acs-*.bib
 *.maf
 *.mlf
 *.mlt
-*.mtc[0-9]*
+*.mtc
+*.mtc[0-9]
+*.mtc[1-9][0-9]
 
 # minted
 _minted*
@@ -144,12 +130,10 @@ _minted*
 *.mw
 
 # mylatexformat
+*.fmt
 
 # nomencl
 *.nlo
-
-# pax
-*.pax
 
 # sagetex
 *.sagetex.sage
@@ -213,11 +197,6 @@ TSWLatexianTemp*
 # KBibTeX
 *~[0-9]*
 
-# auto folder when using emacs and auctex
-/auto/*
-
-# expex forward references with \gathertags
-*-tags.tex
 
 ### OSX ###
 *.DS_Store
@@ -247,11 +226,21 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
+### Processing ###
+.DS_Store
+applet
+application.linux32
+application.linux64
+application.windows32
+application.windows64
+application.macosx
+
+
 ### Windows ###
-# Windows thumbnail cache files
+# Windows image file caches
 Thumbs.db
 ehthumbs.db
-ehthumbs_vista.db
 
 # Folder config file
 Desktop.ini
@@ -268,40 +257,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/osx,windows,latex
 Master.pdf
-Master.pdf
-<<<<<<< HEAD
-<<<<<<< HEAD
-Master.pdf
-=======
->>>>>>> origin/master
-=======
-
-.texpadtmp/Master.blg
-
-.texpadtmp/Master.log
->>>>>>> origin/master
-Master.pdf
-
-Master.pdf
-
-*.gz
-
-*.bcf
-
-*.gz
-
-*.aux
-
-*.aux
-
-*.out
-
-*.gz
-
-*.toc
-
-*.gz
-
-*.gz
